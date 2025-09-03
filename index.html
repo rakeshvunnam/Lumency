@@ -25,21 +25,22 @@
         }
 
         .header-section {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 40px;
             margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(255,255,255,0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .platform-logo {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #ffffff;
+        .platform-logo-img {
+            max-height: 80px;
+            max-width: 300px;
             margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .platform-tagline {
@@ -60,20 +61,18 @@
             border-radius: 15px;
             padding: 25px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.1);
             transition: transform 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .metric-card:hover {
             transform: translateY(-5px);
-            background: rgba(255,255,255,0.15);
         }
 
         .metric-value {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #ffffff;
+            color: #667eea;
             margin-bottom: 5px;
         }
 
@@ -92,7 +91,6 @@
             margin-bottom: 30px;
             flex-wrap: wrap;
             gap: 5px;
-            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .nav-tab {
@@ -103,33 +101,29 @@
             font-weight: 600;
             font-size: 0.95rem;
             white-space: nowrap;
-            color: #cccccc;
-            border: 1px solid transparent;
         }
 
         .nav-tab.active {
-            background: #ffffff;
-            color: #000000;
-            box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+            background: white;
+            color: #667eea;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .nav-tab:not(.active) {
-            color: #cccccc;
+            color: white;
         }
 
         .nav-tab:hover:not(.active) {
-            background: rgba(255,255,255,0.05);
-            border-color: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.1);
         }
 
         .content-panel {
             display: none;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.1);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 20px 40px rgba(255,255,255,0.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             margin-bottom: 30px;
-            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .content-panel.active {
@@ -155,13 +149,13 @@
         .panel-icon {
             width: 50px;
             height: 50px;
-            background: #ffffff;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            color: #000000;
+            color: white;
         }
 
         .dashboard-grid {
@@ -171,11 +165,10 @@
         }
 
         .widget {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.05);
             border-radius: 15px;
             padding: 25px;
-            border-left: 4px solid #ffffff;
-            border: 1px solid rgba(255,255,255,0.15);
+            border-left: 4px solid #667eea;
         }
 
         .widget-title {
@@ -208,15 +201,14 @@
 
         .kpi-value {
             font-weight: 700;
-            color: #ffffff;
+            color: #667eea;
         }
 
         .team-input-section {
-            background: rgba(255,255,255,0.05);
+            background: rgba(103, 126, 234, 0.1);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .team-header {
@@ -236,11 +228,10 @@
         }
 
         .input-item {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 5px 15px rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .input-label {
@@ -263,8 +254,7 @@
 
         .form-control:focus {
             outline: none;
-            border-color: #ffffff;
-            background: rgba(255,255,255,0.15);
+            border-color: #667eea;
         }
 
         .form-control::placeholder {
@@ -272,8 +262,8 @@
         }
 
         .btn-primary {
-            background: #ffffff;
-            color: #000000;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
             border: none;
             padding: 12px 25px;
             border-radius: 8px;
@@ -285,7 +275,6 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            background: #cccccc;
         }
 
         .activation-scorecard {
@@ -295,13 +284,12 @@
         }
 
         .scorecard-item {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.05);
             border-radius: 12px;
             padding: 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.15);
         }
 
         .scorecard-item::before {
@@ -311,26 +299,25 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, #ffffff, #cccccc, #999999);
+            background: linear-gradient(90deg, #28a745, #ffc107, #dc3545);
         }
 
         .score-value {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 10px;
-            color: #ffffff;
         }
 
         .score-excellent {
-            color: #ffffff;
+            color: #28a745;
         }
 
         .score-good {
-            color: #cccccc;
+            color: #ffc107;
         }
 
         .score-needs-improvement {
-            color: #999999;
+            color: #dc3545;
         }
 
         .score-label {
@@ -347,7 +334,7 @@
         }
 
         .asset-item {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.05);
             border-radius: 10px;
             padding: 20px;
             text-align: center;
@@ -357,9 +344,8 @@
         }
 
         .asset-item:hover {
-            border-color: #ffffff;
+            border-color: #667eea;
             transform: translateY(-3px);
-            background: rgba(255,255,255,0.12);
         }
 
         .asset-icon {
@@ -379,17 +365,16 @@
         }
 
         .sample-engagement {
-            background: rgba(255,255,255,0.05);
-            border-left: 4px solid #ffffff;
+            background: rgba(40, 167, 69, 0.1);
+            border-left: 4px solid #28a745;
             border-radius: 8px;
             padding: 20px;
             margin: 20px 0;
-            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .engagement-title {
             font-weight: 600;
-            color: #ffffff;
+            color: #28a745;
             margin-bottom: 10px;
         }
 
@@ -406,12 +391,11 @@
         }
 
         .breakdown-card {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.05);
             border-radius: 12px;
             padding: 25px;
-            box-shadow: 0 5px 20px rgba(255,255,255,0.05);
-            border-top: 4px solid #ffffff;
-            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #667eea;
         }
 
         .breakdown-title {
@@ -432,7 +416,7 @@
 
         .progress-fill {
             height: 100%;
-            background: #ffffff;
+            background: linear-gradient(90deg, #667eea, #764ba2);
             transition: width 0.5s ease;
         }
 
@@ -440,18 +424,13 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #ffffff;
-            color: #000000;
+            background: #28a745;
+            color: white;
             padding: 15px 25px;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             z-index: 1000;
             display: none;
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 80px;
         }
 
         small {
@@ -470,8 +449,8 @@
                 padding: 25px;
             }
             
-            .platform-logo {
-                font-size: 2rem;
+            .platform-logo-img {
+                max-height: 60px;
             }
             
             .nav-tabs {
@@ -489,7 +468,7 @@
 <body>
     <div class="platform-container">
         <div class="header-section">
-            <div class="platform-logo">LUMENCY</div>
+            <img src="./logo.jpg" alt="Company Logo" class="platform-logo-img">
             <div class="platform-tagline">Integrated Sponsorship Measurement & Activation Intelligence Platform</div>
             
             <div class="key-metrics">
@@ -1141,16 +1120,16 @@
                         datasets: [{
                             label: 'TV Viewership (M)',
                             data: [8.2, 9.1, 12.4, 11.8, 13.2, 12.4],
-                            borderColor: '#ffffff',
-                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                            borderColor: '#667eea',
+                            backgroundColor: 'rgba(102, 126, 234, 0.1)',
                             borderWidth: 3,
                             fill: true,
                             tension: 0.4
                         }, {
                             label: 'Digital Views (M)',
                             data: [5.1, 6.3, 8.7, 7.9, 9.1, 8.7],
-                            borderColor: '#cccccc',
-                            backgroundColor: 'rgba(204, 204, 204, 0.1)',
+                            borderColor: '#764ba2',
+                            backgroundColor: 'rgba(118, 75, 162, 0.1)',
                             borderWidth: 3,
                             fill: true,
                             tension: 0.4
@@ -1199,11 +1178,11 @@
                         datasets: [{
                             data: [35, 25, 20, 15, 5],
                             backgroundColor: [
-                                '#ffffff',
-                                '#cccccc',
-                                '#999999',
-                                '#666666',
-                                '#444444'
+                                '#667eea',
+                                '#764ba2',
+                                '#f093fb',
+                                '#f5576c',
+                                '#4facfe'
                             ],
                             borderWidth: 0
                         }]
@@ -1233,16 +1212,16 @@
                             label: 'ROI %',
                             data: [245, 289, 324, 378],
                             backgroundColor: [
-                                'rgba(255, 255, 255, 0.8)',
-                                'rgba(204, 204, 204, 0.8)',
-                                'rgba(153, 153, 153, 0.8)',
-                                'rgba(102, 102, 102, 0.8)'
+                                'rgba(102, 126, 234, 0.8)',
+                                'rgba(118, 75, 162, 0.8)',
+                                'rgba(240, 147, 251, 0.8)',
+                                'rgba(245, 87, 108, 0.8)'
                             ],
                             borderColor: [
-                                '#ffffff',
-                                '#cccccc',
-                                '#999999',
-                                '#666666'
+                                '#667eea',
+                                '#764ba2',
+                                '#f093fb',
+                                '#f5576c'
                             ],
                             borderWidth: 2,
                             borderRadius: 8
@@ -1288,14 +1267,14 @@
                         datasets: [{
                             label: 'Pre-Campaign',
                             data: [65, 58, 45, 62, 55],
-                            borderColor: 'rgba(255, 255, 255, 0.6)',
-                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                            borderColor: 'rgba(102, 126, 234, 0.6)',
+                            backgroundColor: 'rgba(102, 126, 234, 0.1)',
                             borderWidth: 2
                         }, {
                             label: 'Post-Campaign',
                             data: [83, 70, 57, 77, 70],
-                            borderColor: 'rgba(204, 204, 204, 0.8)',
-                            backgroundColor: 'rgba(204, 204, 204, 0.2)',
+                            borderColor: 'rgba(118, 75, 162, 0.8)',
+                            backgroundColor: 'rgba(118, 75, 162, 0.2)',
                             borderWidth: 2
                         }]
                     },
@@ -1341,11 +1320,11 @@
                         datasets: [{
                             data: [15, 28, 32, 18, 7],
                             backgroundColor: [
-                                '#ffffff',
-                                '#cccccc',
-                                '#999999',
-                                '#666666',
-                                '#444444'
+                                '#667eea',
+                                '#764ba2',
+                                '#f093fb',
+                                '#f5576c',
+                                '#4facfe'
                             ],
                             borderWidth: 0
                         }]
@@ -1379,10 +1358,10 @@
                             label: 'Market Share %',
                             data: [23.4, 18.7, 15.2, 12.8],
                             backgroundColor: [
-                                '#ffffff',
-                                'rgba(255, 255, 255, 0.6)',
-                                'rgba(255, 255, 255, 0.4)',
-                                'rgba(255, 255, 255, 0.2)'
+                                '#667eea',
+                                'rgba(102, 126, 234, 0.6)',
+                                'rgba(102, 126, 234, 0.4)',
+                                'rgba(102, 126, 234, 0.2)'
                             ],
                             borderRadius: 4
                         }]
@@ -1425,7 +1404,7 @@
                         datasets: [{
                             label: 'Click Rate %',
                             data: [3.2, 4.7],
-                            backgroundColor: ['#cccccc', '#ffffff'],
+                            backgroundColor: ['#f5576c', '#667eea'],
                             borderRadius: 6
                         }]
                     },
@@ -1467,11 +1446,11 @@
                         datasets: [{
                             data: [18.4, 15.2, 12.8, 10.6, 8.9],
                             backgroundColor: [
-                                'rgba(255, 255, 255, 0.8)',
-                                'rgba(204, 204, 204, 0.8)',
-                                'rgba(153, 153, 153, 0.8)',
-                                'rgba(102, 102, 102, 0.8)',
-                                'rgba(68, 68, 68, 0.8)'
+                                'rgba(102, 126, 234, 0.8)',
+                                'rgba(118, 75, 162, 0.8)',
+                                'rgba(240, 147, 251, 0.8)',
+                                'rgba(245, 87, 108, 0.8)',
+                                'rgba(79, 172, 254, 0.8)'
                             ],
                             borderWidth: 0
                         }]
@@ -1542,7 +1521,7 @@
             document.querySelectorAll('.asset-item').forEach(item => {
                 item.style.borderColor = 'transparent';
             });
-            event.currentTarget.style.borderColor = '#ffffff';
+            event.currentTarget.style.borderColor = '#667eea';
         }
 
         function updateMeasurement() {
@@ -1578,10 +1557,10 @@
             notification.style.display = 'block';
             
             const colors = {
-                'success': '#ffffff',
-                'info': '#ffffff',
-                'warning': '#ffffff',
-                'error': '#ffffff'
+                'success': '#28a745',
+                'info': '#667eea',
+                'warning': '#ffc107',
+                'error': '#dc3545'
             };
             
             notification.style.backgroundColor = colors[type] || colors.info;
@@ -1602,9 +1581,9 @@
             setInterval(() => {
                 const metricValues = document.querySelectorAll('.metric-value');
                 metricValues.forEach(metric => {
-                    metric.style.color = '#cccccc';
+                    metric.style.color = '#28a745';
                     setTimeout(() => {
-                        metric.style.color = '#ffffff';
+                        metric.style.color = '#667eea';
                     }, 1000);
                 });
             }, 30000);
@@ -1619,14 +1598,14 @@
         document.addEventListener('mouseover', function(event) {
             if (event.target.classList.contains('widget')) {
                 event.target.style.transform = 'translateY(-2px)';
-                event.target.style.boxShadow = '0 10px 30px rgba(255,255,255,0.15)';
+                event.target.style.boxShadow = '0 10px 30px rgba(0,0,0,0.15)';
             }
         });
 
         document.addEventListener('mouseout', function(event) {
             if (event.target.classList.contains('widget')) {
                 event.target.style.transform = 'translateY(0)';
-                event.target.style.boxShadow = '0 5px 20px rgba(255,255,255,0.05)';
+                event.target.style.boxShadow = '0 5px 20px rgba(0,0,0,0.08)';
             }
         });
 
